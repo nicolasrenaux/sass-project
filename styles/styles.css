@@ -28,15 +28,16 @@ header nav ul li {
   list-style-type: none;
 }
 header nav ul a {
-  text-decoration: none;
-  color: #0C0421;
-  font-weight: 500;
   font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #0C0421;
+  text-decoration: none;
+  font-weight: 500;
 }
 header #home {
   max-width: 1040px;
-  width: 80%;
   margin: 0 auto;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -45,28 +46,33 @@ header #home .textos-home {
   max-width: 464px;
 }
 header #home .textos-home h1 {
+  font-family: "Krona One", sans-serif;
   font-size: 42px;
   color: #0C0421;
   margin-bottom: 2rem;
-  font-family: "Krona One", sans-serif;
 }
 header #home .textos-home h1 span {
   color: #4e75ff;
 }
 header #home .textos-home button {
-  background-color: #4e75ff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
   color: white;
+  background-color: #4e75ff;
   border-radius: 40px;
   border: none;
   padding: 24px;
   width: 280px;
-  font-size: 22px;
   font-weight: 600;
-  font-family: "Montserrat", sans-serif;
 }
 header #home .img-home {
   max-width: 464px;
 }
 header #home .img-home img {
   width: 100%;
+}
+
+#nosso-espaco {
+  margin: 0 auto;
+  width: 80%;
 }/*# sourceMappingURL=styles.css.map */

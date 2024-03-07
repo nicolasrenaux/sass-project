@@ -1,4 +1,5 @@
 @use './abstract/variaveis';
+@use '../styles/abstract/mixins';
 
 header {
     background: variaveis.$gradiente-primario;
@@ -24,18 +25,16 @@ header {
                 list-style-type: none;
             }
             a {
+                @include mixins.ff-fs-cl(variaveis.$ft-textos, 1rem,variaveis.$cor-primaria);
                 text-decoration: none;
-                color: variaveis.$cor-primaria;
                 font-weight: 500;
-                font-family: variaveis.$ft-textos;
             }
         }
     }
 
     #home{
         max-width: 1040px;
-        width: 80%;
-        margin: 0 auto;
+        @include mixins.margem-central(80%);
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -43,26 +42,22 @@ header {
         .textos-home{
             max-width: 464px;
             h1{
-                font-size: 42px;
-                color: variaveis.$cor-primaria;
+                @include mixins.ff-fs-cl(variaveis.$ft-titulos, 42px,variaveis.$cor-primaria);
                 margin-bottom: 2rem;
-                font-family: variaveis.$ft-titulos;
                 span{
                     color: variaveis.$cor-secundaria;
                 }
             }
 
             button{
+                @include mixins.ff-fs-cl(variaveis.$ft-textos, 22px,white);
                 background-color: variaveis.$cor-secundaria;
-                color: white;
                 border-radius: 40px;
                 border: none;
                 padding: 24px;
                 width: 280px;
-                font-size: 22px;
                 font-weight: 600;
-                font-family: variaveis.$ft-textos;
-            }
+        }
         }
         .img-home{
             max-width: 464px;
